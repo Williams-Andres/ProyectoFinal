@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+header {
+    height: auto;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: #74C69D;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    height: 80px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 30px;
+    background-color: #52B788;
+    padding: 10px 18px;
+    border-radius: 30px;
+}
+
+nav ul li a {
+    font-size: 23px;
+    text-decoration: none;
+    color: white;
+}
+
+.barraBusqueda {
+    display: flex;
+    justify-content: baseline;
+}
+
+.barraBusqueda input {
+    display: none;
+    width: 250px;
+    margin-right: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    background-color: #52B788;
+    color: white;
+    font-size: 18px;
+}
+
+.barraBusqueda input::placeholder {
+    color: white;
+}
+
+.barraBusqueda input:focus {
+    outline: none;
+    background-color: #52B788;
+    color: white;
+    font-size: 18px;
+}
+
+.barraBusqueda input:focus::placeholder {
+    color: white;
+    font-size: 18px;
+}
+
+.barraBusqueda button {
+    height: 50px;
+    width: 50px;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+.barraBusqueda img {
+    width: 100%;
+}
+
+.login {
+    display: flex;
+    justify-content: baseline;
+    background-color: #52B788;
+    padding: 10px 18px;
+    border-radius: 30px;
+}
+
+.login a {
+    text-decoration: none;
+    font-size: 23px;
+    color: white;
+}
+
+.login span {
+    font-size: 23px;
+    color: #1B4332;
+    margin: 0px 10px 0px 10px;
+}
+
+.login img {
+    width: 23px;
+    margin-right: 10px;
+}
+
+main {
+    height: 89vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 437px;
+    height: 448px;
+    background-color: #74C69D;
+    padding: 20px;
+    border-radius: 32px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+form h2 {
+    color: #2B3142;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+form input[type="text"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.otrocontainer {
+    width: 100%;
+}
+
+.user-pass input[type="text"],
+input[type="password"] {
+    background-color: rgba(255, 255, 255, 0.51);
+    margin-bottom: 20px;
+    border-radius: 40px;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.user-pass input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+}
+
+.user-pass {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.remember label {
+    margin-left: 20px;
+    position: relative;
+    padding: 5px 15px 5px 51px;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.remember label:before {
+    position: absolute;
+    content: "";
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background: none;
+    border: 3px solid #1B4332;
+    border-radius: 50%;
+    left: 17px;
+    top: 2px;
+}
+
+.remember input[type="radio"]:checked+label:before {
+    background-color: #1b433267;
+}
+
+form input[type="radio"] {
+    display: none;
+}
+
+form input[type="submit"] {
+    width: 30%;
+    padding: 10px;
+    background-color: #5CBC8E;
+    border: none;
+    border-radius: 40px;
+    color: #1B4332;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #52B788;
+}

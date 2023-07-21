@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+header {
+    height: auto;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: #74C69D;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    height: 80px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 30px;
+    background-color: #52B788;
+    padding: 10px 18px;
+    border-radius: 30px;
+}
+
+nav ul li a {
+    font-size: 23px;
+    text-decoration: none;
+    color: white;
+}
+
+.barraBusqueda {
+    display: flex;
+    justify-content: baseline;
+}
+
+.barraBusqueda input {
+    display: none;
+    width: 250px;
+    margin-right: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    background-color: #52B788;
+    color: white;
+    font-size: 18px;
+}
+
+.barraBusqueda input::placeholder {
+    color: white;
+}
+
+.barraBusqueda input:focus {
+    outline: none;
+    background-color: #52B788;
+    color: white;
+    font-size: 18px;
+}
+
+.barraBusqueda input:focus::placeholder {
+    color: white;
+    font-size: 18px;
+}
+
+.barraBusqueda button {
+    height: 50px;
+    width: 50px;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+.barraBusqueda img {
+    width: 100%;
+}
+
+.login {
+    display: flex;
+    justify-content: baseline;
+    background-color: #52B788;
+    padding: 10px 18px;
+    border-radius: 30px;
+}
+
+.login a {
+    text-decoration: none;
+    font-size: 23px;
+    color: white;
+}
+
+.login span {
+    font-size: 23px;
+    color: #1B4332;
+    margin: 0px 10px 0px 10px;
+}
+
+.login img {
+    width: 23px;
+    margin-right: 10px;
+}
+
+main {
+    height: 89vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background-color: #74C69D;
+    width: 443px;
+    height: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 32px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+form h2 {
+    margin-bottom: 20px;
+    color: #2B3142;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-inputs {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-inputs input[type="text"],
+.form-inputs input[type="password"],
+.form-inputs input[type="email"],
+.form-inputs input[type="number"] {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.51);
+    margin-bottom: 20px;
+    border-radius: 40px;
+    border: none;
+    padding: 13px;
+    font-size: 18px;
+}
+
+.form-inputs input[type=number]::-webkit-inner-spin-button,
+.form-inputs input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form-inputs input[type="text"]:focus,
+.form-inputs input[type="password"]:focus,
+.form-inputs input[type="email"]:focus,
+.form-inputs input[type="number"]:focus {
+    outline: none;
+}
+
+form input[type="submit"] {
+    width: 30%;
+    padding: 10px;
+    background-color: #5CBC8E;
+    border: none;
+    border-radius: 40px;
+    color: #1B4332;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #3B945E;
+}
+
+.warnings {
+    width: 500px;
+    text-align: center;
+    color: #2B3142;
+    padding: 20px;
+}
